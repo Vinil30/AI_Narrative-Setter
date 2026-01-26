@@ -1,0 +1,6 @@
+Flask
+langchain
+langgraph
+groq
+python-dotenv
+openai-agents
