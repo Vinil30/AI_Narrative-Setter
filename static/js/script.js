@@ -10,8 +10,8 @@ async function twitter_analytics(){
 
 
     });
-    const result = response.json()
+    const result = await response.json()
     console.log(result)
-    document.getElementById("output").innerText = result
+    document.getElementById("analysis").innerText = result.analysis
 
 }
