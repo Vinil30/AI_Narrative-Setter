@@ -3,11 +3,12 @@ import os
 import json
 from dotenv import load_dotenv
 from routes.twitter import twitter_bp
+from routes.analyser import analyser_bp
 load_dotenv()
 
 app = Flask(__name__)
 app.register_blueprint(twitter_bp)
-
+app.register_blueprint(analyser_bp)
 
 @app.route("/")
 def home():
